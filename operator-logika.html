@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Logika (And,Or, Kebalikan)</title>
+</head>
+<body>
+<script>
+
+    const nilaiUjian = 70;
+    const nilaiAbsensi = 70;
+
+    const lulusUjian = nilaiUjian >= 75;
+    const lulusAbsensi = nilaiAbsensi >= 70;
+
+    const lulus = lulusUjian || lulusAbsensi; //true
+    document.writeln("<p>" + !lulus + "</p>") //false
+</script>
+
+</body>
+</html>

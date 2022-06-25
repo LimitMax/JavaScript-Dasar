@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      //String Template
+      const nama = "Taufiq Qurohman Ruki";
+      const tempalte = `Nama: ${nama}`;
+
+      console.info(tempalte);
+
+      //String template expression
+      const namaSiswa = "Vina Merlianti";
+      const nilai = 80;
+      const template2 = `Name: ${namaSiswa}, Lulus: ${nilai >= 80}`;
+
+      console.info(template2);
+
+      //Multiline String
+      let multilineString = `Hai nama Saya Taufiq,
+Saya dari Majalengka,
+Saya sedang belajar JavaScript`;
+
+      document.writeln("<pre>");
+      document.writeln(multilineString);
+      document.writeln("</pre>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Popup alert,prompt,dan confirm</title>
+  </head>
+  <body>
+    <script>
+      //Alert
+      //   alert("Selamat Datang");
+
+      //Prompt
+      /*
+      const name = prompt("Siapa Nama Kamu")
+      alert(`Selamat datang ${name}`);*/
+
+      //confirm
+      const masuk = confirm("Apakah anda akan masuk?");
+
+      if (masuk) {
+        const name = prompt("Siapa Nama Kamu?");
+        alert(`Selamat datang ${name}`);
+      } else {
+        alert("See You");
+      }
+    </script>
+  </body>
+</html>

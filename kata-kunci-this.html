@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kata Kunci This</title>
+  </head>
+  <body>
+    <script>
+      //global
+      //console.info(this);
+
+      //function
+      //function nama(){
+      //    console.info(this);
+      //}
+
+      //object method
+      const kota = {
+        nama: "Vina",
+
+        alamat: function namaKota(nilai) {
+          console.info(`Hello ${this.nama}, Saya berasal dari ${nilai} `);
+        },
+      };
+      kota.alamat("Majalengka");
+    </script>
+  </body>
+</html>

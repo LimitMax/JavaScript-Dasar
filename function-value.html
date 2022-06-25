@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Function Sebagai Value</title>
+  </head>
+  <body>
+    <script>
+      //Function sebagai value
+      function kampoeng(name) {
+        document.writeln(`<p>Selamat datang di Kampoeng ${name}</p>`);
+      }
+
+      let dusun = kampoeng;
+
+      dusun("Deog");
+
+      function giveMeName(callback) {
+        callback("Taufiq");
+      }
+
+      giveMeName(dusun);
+    </script>
+  </body>
+</html>

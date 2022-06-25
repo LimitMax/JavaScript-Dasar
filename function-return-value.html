@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Function Return Value</title>
+  </head>
+  <body>
+    <script>
+      //Function return value
+      function sayHello(firstName, middleName, lastName) {
+        const say = `Hello ${firstName} ${middleName} ${lastName}`;
+        return say;
+      }
+
+      //Get Nilai
+      function nilaiAkhir(score) {
+        if (score >= 80) {
+          return "A";
+        } else if (score >= 70) {
+          return "B";
+        } else if (score >= 60) {
+          return "C";
+        } else if (score >= 50) {
+          return "D";
+        } else {
+          return "E";
+        }
+      }
+
+      //panggil function sayHello
+      const reslut = sayHello("Taufiq", "Qurohman", "Ruki");
+      document.writeln(`<p>${reslut}</p>`);
+
+      //Panggil function finalValue
+      const finalValue = nilaiAkhir(79);
+      document.writeln(`Nilai Anda : ${finalValue}`);
+
+      //mengembalikan value dalam function
+      function isContaint(array, searchValue) {
+        for (const element of array) {
+          if (element === searchValue) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      //Panggil function
+      const array = [1, 2, 3, 4, 55, 6, 7, 14, 98];
+      const search = 14;
+      const found = isContaint(array, search);
+      document.writeln(`<p>${found}</p>`);
+    </script>
+  </body>
+</html>

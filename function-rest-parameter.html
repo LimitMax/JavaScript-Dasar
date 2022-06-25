@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Function Rest Parameter</title>
+  </head>
+  <body>
+    <script>
+      //Rest Parameter
+      function sum(name, ...data) {
+        let total = 0;
+        for (const item of data) {
+          total += item;
+        }
+        console.info(`Total ${name} is ${total}`);
+      }
+
+      sum("Jack", 14, 98, 10, 7, 20);
+      sum("Level", 14, 16, 20, 50);
+
+      //spread syntax
+      sum("Spread Syntx", ...[1, 2, 3, 4, 5, 6, 7, 8, 9, 11]);
+    </script>
+  </body>
+</html>

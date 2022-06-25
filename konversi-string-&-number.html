@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Konversi String dan Number</title>
+  </head>
+  <body>
+    <script>
+      //Konversi String ke Number
+      const value1 = parseInt("10"); //Konversi String ke integer
+      const value2 = 10;
+      const sum = value1 + value2;
+
+      document.writeln(`<p>${sum}</p>`);
+
+      document.writeln(`<p>${parseInt("1.9")}</p>`);
+      document.writeln(`<p>${parseFloat("1.9")}</p>`);
+      document.writeln(`<p>${Number("9.8")}</p>`);
+
+      //Konversi Number ke String
+      const a = 10;
+      const b = 10;
+      const biner = a.toString() + b.toString();
+
+      document.writeln(`<p>${biner}</p>`);
+
+      //NaN (Not a Number)
+      document.writeln(`${parseInt("Salah")}`); //Bisa ditoleransi
+
+      document.writeln(`${Number("1kembali")}`); // tidak dapat ditoleransi
+
+      //Function isNan
+      document.writeln(`${isNaN(sum)}`);
+      document.writeln(`${isNaN("1salah")}`);
+    </script>
+  </body>
+</html>

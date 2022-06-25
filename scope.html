@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scope</title>
+  </head>
+  <body>
+    <script>
+      //global variabal
+      const level = 90;
+
+      function game() {
+        console.info(level);
+      }
+
+      game();
+
+      //local variabel
+      function benda() {
+        let padat = "Batu";
+        console.info(padat);
+      }
+
+      benda();
+
+      //nested function
+
+      function games() {
+        let tekaTeki = "Catur";
+
+        function nestedVariabel() {
+          console.info(tekaTeki);
+        }
+        nestedVariabel();
+      }
+
+      games();
+    </script>
+  </body>
+</html>

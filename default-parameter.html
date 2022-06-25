@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Default Function Parameter</title>
+  </head>
+  <body>
+    <script>
+      //default parameter
+      function kampoeng(nama, rt, rw, desa = "Sindanghaji") {
+        document.writeln(`Hai ${nama}, Selamat datang di RT ${rt} / RW ${rw} Desa ${desa}`);
+      }
+
+      //panggil
+      kampoeng("Taufiq", 07, 02);
+    </script>
+  </body>
+</html>

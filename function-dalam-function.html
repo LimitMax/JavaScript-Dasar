@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Function dalam Function</title>
+  </head>
+  <body>
+    <script>
+      //Function
+      function kota() {
+        //Function dalam function
+        function desa(namaDesa) {
+          console.info(`Selamat datang di Desa ${namaDesa}`);
+        }
+
+        desa("Sindanghaji");
+      }
+
+      kota();
+    </script>
+  </body>
+</html>

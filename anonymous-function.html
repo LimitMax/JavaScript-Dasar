@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Anonymous Function</title>
+  </head>
+  <body>
+    <script>
+      const say = function (kota) {
+        document.writeln(`<p>Selamat Datang Di Kota ${kota}</p>`);
+      };
+
+      say("Majalengka");
+
+      function namaKota(callback) {
+        callback("Majalengka");
+      }
+      namaKota(say);
+
+      namaKota(function (kota) {
+        document.writeln(`<p>Welcome To ${kota} City</p>`);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Array</title>
+  </head>
+  <body>
+    <script>
+      //Array Kosong
+      let arrayKosong = [];
+
+      //Array Nama
+      let arrayNama = ["Sipa", "Nadila", "Vina"];
+
+      //Menambahkan data pada array
+      let hari = [];
+      hari.push("Senin");
+      hari.push("Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu");
+
+      console.table(hari);
+
+      //Mengetahui panjang array
+      console.table(hari.length);
+
+      //mengubah nilai array
+      hari[6] = "Libur";
+
+      console.table(hari);
+
+      //Menghapus nilai Array
+      delete hari[6];
+
+      console.table(hari);
+
+      hari[6] = "WeekEnd";
+
+      console.table(hari);
+    </script>
+  </body>
+</html>

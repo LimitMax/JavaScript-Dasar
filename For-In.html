@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>For In</title>
+  </head>
+  <body>
+    <script>
+      //For in pada object
+      const namaTeman = {
+        teman1: "Vina",
+        teman2: "Ayu",
+        teman3: "Syifa",
+      };
+
+      for (const teman in namaTeman) {
+        document.writeln(`<p>${teman} : ${namaTeman[teman]}</p>`);
+      }
+
+      //For in pada array
+      const names = ["Taufiq", "oping", "opik"];
+
+      for (const index in names) {
+        document.writeln(`<p>${index} : ${names[0]}</p>`);
+      }
+    </script>
+  </body>
+</html>

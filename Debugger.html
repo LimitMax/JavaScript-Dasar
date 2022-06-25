@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugger</title>
+</head>
+<body>
+<script>
+    function nama(firtsName,middleName, lastName){
+        //(mencari bug menggunakan debugger)
+        debugger;
+        fullName = `${firtsName} ${middleName} ${lastName}`
+        return fullName
+    }
+
+    const getNama = nama('Taufiq','Qurohman', 'Ruki')
+    console.info(getNama)
+</script>
+
+</body>
+</html>

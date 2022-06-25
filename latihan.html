@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan JavaScript</title>
+  </head>
+  <body>
+    <script>
+      const masuk = confirm("Apakah anda ingin masuk?");
+
+      if (masuk) {
+        const nama = prompt("Masukan Nama Anda!");
+        alert(`Selamat datang ${nama} di Game Penghitung Angka`);
+
+        let angkaPertama = Number(prompt("Masukan angka pertama!"));
+        let angkaKedua = Number(prompt("Masukan angka kedua!"));
+        let jumlah = angkaPertama + angkaKedua;
+        let kurang = angkaPertama - angkaKedua;
+        let kali = angkaPertama * angkaKedua;
+        let bagi = angkaPertama / angkaKedua;
+        let sisa = angkaPertama % angkaKedua;
+
+        alert(`Hasil penjumlahan adalah ${jumlah}`);
+        alert(`Hasil pengurangan adalah ${kurang}`);
+        alert(`Hasil perkalian adalah ${kali}`);
+        alert(`Hasil pembagian adalah ${bagi}`);
+        alert(`Hasil sisa adalah ${sisa}`);
+        alert(`Terima kasih telah menggunakan jasa kami ${nama} :)`);
+      } else {
+        alert("Terima kasih");
+      }
+    </script>
+  </body>
+</html>

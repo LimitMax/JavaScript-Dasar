@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Function Generator</title>
+  </head>
+  <body>
+    <script>
+      //Functional Generator
+      function* kota() {
+        yield "Majalengka";
+        yield "Bandung";
+        yield "Cirebon";
+      }
+
+      const nama = kota();
+      for (const data of nama) {
+        console.info(data);
+      }
+
+      //Angka Genap
+
+      function* angkaGenap(nilai) {
+        for (let i = 1; i <= nilai; i++) {
+          if (i % 2 === 0) {
+            yield i;
+          }
+        }
+      }
+
+      const genap = angkaGenap(10);
+      for (const value of genap) {
+        console.info(value);
+      }
+    </script>
+  </body>
+</html>

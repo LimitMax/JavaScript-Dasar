@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>With Statement</title>
+  </head>
+  <body>
+    <script>
+      //With statement
+      const kota = {
+        jawaBarat: "Bandung",
+        jawaTengah: "Semarang",
+        jawaTimur: "Surabaya",
+      };
+
+      with (kota) {
+        console.info(jawaBarat);
+        console.info(jawaTengah);
+        console.info(jawaTimur);
+      }
+    </script>
+  </body>
+</html>

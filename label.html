@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Label</title>
+  </head>
+  <body>
+    <script>
+      loopi: for (let i = 0; i < 15; i++) {
+        loopk: for (let k = 1; k <= 10; k++) {
+          if (k > 15) {
+            continue loopi;
+          }
+          document.writeln(`<p>${i} - ${k}</p>`);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Getter Setter</title>
+  </head>
+  <body>
+    <script>
+      const nama = {
+        firstName: "Taufiq",
+        middleName: "Qurohman",
+        lastName: "Ruki",
+
+        //getter
+        get fullName() {
+          return `${this.firstName} ${this.middleName} ${this.lastName}`;
+        },
+
+        //setter
+        set fullName(value) {
+          const array = value.split(" ");
+          this.firstName = array[0];
+          this.middleName = array[1];
+          this.lastName = array[2];
+        },
+      };
+
+      nama.fullName = "Muhamad Haidar Zafran";
+      console.table(nama);
+
+      nama.fullName = "Taufiq Qurohman Ruki";
+      console.table(nama);
+    </script>
+  </body>
+</html>

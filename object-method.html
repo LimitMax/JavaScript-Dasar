@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <script>
+      /*const kota = {
+        namaKota : 'Majalengka',
+
+        sayHello : function (nama){
+            alert(`Selamat datang di kota ${nama}`)
+    }
+    };*/
+
+      const kota = {
+        namaKota: "Cirebon",
+      };
+
+      kota.sayHello = function (nama) {
+        alert(`Selamat datang di kota ${nama}`);
+      };
+
+      kota.sayHello("Majalengka");
+    </script>
+  </body>
+</html>

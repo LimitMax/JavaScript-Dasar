@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tipe Data Objek</title>
+  </head>
+  <body>
+    <script>
+      //Tipe data Objet kosong
+      const orang = {};
+
+      //Menambah data Object
+      orang["nama"] = "Taufiq Qurohman Ruki";
+      orang["alamat"] = "Majalengka";
+      orang["umur"] = 20;
+
+      console.table(orang);
+
+      //Menghapus data bject
+      delete orang["umur"];
+
+      console.table(orang);
+
+      //Membuat tipe data object dengan properties
+      const teman = {
+        nama1: "Vina Merlianti",
+        nama2: "Sipa Tri Astuti",
+        nama3: "Nadila Andriani",
+      };
+
+      console.table(teman);
+
+      //mengakses properties
+
+      console.info(`Nama Teman SMP   : ${teman.nama1}`);
+      console.info(`Nama Teman SMP 2 : ${teman.nama3}`);
+      console.info(`Nama Teman SMA   : ${teman.nama2}`);
+    </script>
+  </body>
+</html>

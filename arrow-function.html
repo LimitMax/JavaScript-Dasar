@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <script>
+      //Arrow function
+      const sayHello = (name) => {
+        const say = `Hello ${name}`;
+        console.info(say);
+      };
+
+      sayHello("Taufiq");
+
+      //Arrow function tanpa block
+      const sayHai = (nama) => console.info(`Hai ${nama}`);
+
+      sayHai("Oping");
+
+      //Arrow function mengembalikan value
+      const sum = (angka1, angka2) => angka1 * angka2;
+
+      console.info(sum(10, 5));
+
+      //Arrow function sebagai parameter
+      function giveMeName(callback) {
+        callback("Taufiq");
+      }
+
+      giveMeName((names) => console.info(`Hello ${names}`));
+    </script>
+  </body>
+</html>

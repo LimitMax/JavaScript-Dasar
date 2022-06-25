@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destructuring Array</title>
+</head>
+<body>
+<script>
+    //Array Destructuring
+    {
+        const person = ['Taufiq', 'Qurohman', 'Ruki'];
+        const [firstName, middleName, lastName] = person;
+
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+    }
+    //Object Destructuring
+    {
+        const data = {
+            nama: 'Taufiq Qurohman Ruki',
+            umur: 20,
+            alamat: {
+                rt: 7,
+                rw: 2,
+                desa: 'Sindanghaji'
+            },
+            hobby: 'Game',
+            Channel: 'Hai Taufiq'
+        }
+        let {nama,umur,...other} = data;
+        console.info(nama);
+        console.info(umur);
+        console.info(other)
+    }
+    //Nested
+    {
+        const data = {
+            nama: 'Taufiq Qurohman Ruki',
+            umur: 20,
+            alamat: {
+                rt: 7,
+                rw: 2,
+                desa: 'Sindanghaji'
+            },
+            hobby: 'Game',
+            Channel: 'Hai Taufiq'
+        }
+        let {nama,umur,alamat: {rt,rw,desa},...other} = data;
+        console.info(nama);
+        console.info(umur);
+        console.info(rt);
+        console.info(rw);
+        console.info(desa);
+        console.info(other);
+    }
+
+
+
+</script>
+
+</body>
+</html>
